@@ -1,0 +1,4 @@
+-g create-react-app
+express
+nodemon
+jquery
