@@ -13,4 +13,19 @@ code {
     monospace;
 }
 
+.navbar {
+  position: relative;
+  height: 70px;
+}
 
+.logo {
+  position: absolute;
+  top: 0;
+}
+.navbar-nav{
+  padding: 100px;
+}
+
+#search{
+  margin-right: 40%;
+}

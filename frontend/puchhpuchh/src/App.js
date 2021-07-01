@@ -1,10 +1,10 @@
-import Header from './components/homePage/Navbar'
+import Navbar from './components/homePage/Navbar'
 
 
 function App() {
   return (
     <div className="App">
-      <Header title = "PuchhPuchh" />
+      <Navbar />
     </div>
   );
 }
