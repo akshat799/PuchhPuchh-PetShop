@@ -1,0 +1,34 @@
+.custom-dropdown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.container{
+    width: 10rem;
+}
+
+.dropdown-elements{
+    align-self: flex-start;
+    margin-top: 0;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    border : 1px solid black;
+    margin-left: 0.8em;
+    width: 10rem;
+    border-radius: 5px;
+    padding-left: 1em;
+    padding-top: 0.5em;
+}
+
+.parent{
+    text-align: center;
+}
+
+.parent:hover {
+   cursor: pointer;
+   background-color: red;
+}
