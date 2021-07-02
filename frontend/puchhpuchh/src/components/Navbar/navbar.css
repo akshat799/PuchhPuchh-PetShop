@@ -1,0 +1,31 @@
+.navigation-bar{
+    background-color: green;
+    height: 10vh;    
+    display: flex;
+}
+
+.Logo{
+    margin-top: 1vh;
+    position: absolute;
+}
+
+.nav-options{
+    margin-left: 10rem;
+    display: flex;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+}
+
+.home{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+.home:hover{
+    color: aliceblue;
+    font-size: 1.3rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
