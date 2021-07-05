@@ -2,3 +2,6 @@
 express
 nodemon
 jquery
+cors
+dotenv
+mongoose
