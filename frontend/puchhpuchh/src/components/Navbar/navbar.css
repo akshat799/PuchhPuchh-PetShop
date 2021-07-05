@@ -12,9 +12,11 @@
 .nav-options{
     margin-left: 10rem;
     display: flex;
-    /* background-color: red; */
     justify-content: center;
-    align-items: center;
+}
+
+.nav-options > * {
+    margin-top: 1.5rem;
 }
 
 .home{
@@ -28,4 +30,12 @@
     font-size: 1.3rem;
     transition: 0.2s;
     cursor: pointer;
+}
+
+.dropdown-home{
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    /* color: aliceblue; */
+    font-size: 1.2rem;
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./dropdown.css";
 
-function Dropdown() {
+function Dropdown(props) {
   const [selected, setSelected] = useState(false);
 
   const toggleSelected = () => {
@@ -9,6 +9,7 @@ function Dropdown() {
     setSelected(currVal);
   };
 
+  console.log("PRINTING PROPS:", props.menu.title);
   return (
     /*    <div className="custom-dropdown">
       <div className="main-container">
@@ -26,10 +27,18 @@ function Dropdown() {
     </div> */
     <div className="dropdown-container">
       <div className="option-1">
-        <button>Hello</button>
+        <button>{props.menu.title}</button>
         <div className="list">
+          {/* <span>Lorem</span>
           <span>Lorem</span>
           <span>Lorem</span>
+          <span>Lorem</span>
+          <span>Lorem</span>
+          <span>Lorem</span>
+          <span>Lorem</span> */}
+          {props.menu.options.map((option) => {
+            return <p onClick={option.onPress}>{option.name}</p>;
+          })}
         </div>
       </div>
     </div>
