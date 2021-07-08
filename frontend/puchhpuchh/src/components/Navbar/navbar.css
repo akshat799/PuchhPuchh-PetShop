@@ -1,0 +1,41 @@
+.navigation-bar{
+    background-color: green;
+    height: 8vh;    
+    display: flex;
+}
+
+.Logo{
+    margin-top: 1vh;
+    position: absolute;
+}
+
+.nav-options{
+    margin-left: 8.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-options > * {
+    margin-top: 1.5rem;
+}
+
+.home{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.2rem;
+    transition: all 0.2s;
+}
+
+.home:hover{
+    color: aliceblue;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.dropdown-home{
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    /* color: aliceblue; */
+    font-size: 1.2rem;
+}
