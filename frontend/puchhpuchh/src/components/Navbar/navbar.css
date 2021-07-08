@@ -1,6 +1,6 @@
 .navigation-bar{
     background-color: green;
-    height: 10vh;    
+    height: 8vh;    
     display: flex;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .nav-options{
-    margin-left: 10rem;
+    margin-left: 8.5rem;
     display: flex;
     justify-content: center;
 }
@@ -23,12 +23,12 @@
     text-decoration: none;
     color: aliceblue;
     font-size: 1.2rem;
+    transition: all 0.2s;
 }
 
 .home:hover{
     color: aliceblue;
-    font-size: 1.3rem;
-    transition: 0.2s;
+    transform: scale(1.2);
     cursor: pointer;
 }
 
