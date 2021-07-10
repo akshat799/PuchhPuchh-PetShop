@@ -19,7 +19,7 @@ export default function Footer() {
                 <a href="https://twitter.com/puchhpuchh1">
                     <TwitterIcon style={{color: "aliceblue"}} />
                 </a>
-                <a href="#">
+                <a href="mailto:support@puchhpuchh.com">
                 <EmailIcon style={{color: "aliceblue"}} />
                 </a>
             </div>
