@@ -1,12 +1,12 @@
 import Navbar from "./components/Navbar/Navbar";
 import Dropdown from "./components/Dropdown/dropdown";
-import Header from "./components/Header/Header";
+import Footer from "./components/Header/Footer";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Header />
+      <Footer />
     </div>
   );
 }

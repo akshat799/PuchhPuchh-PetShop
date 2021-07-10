@@ -5,8 +5,8 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import EmailIcon from '@material-ui/icons/Email';
 import PhoneIcon from '@material-ui/icons/Phone';
-import "./header.css";
-export default function Header() {
+import "./footer.css";
+export default function Footer() {
     return (
         <div className="header-container">
             <div className="social-media">
