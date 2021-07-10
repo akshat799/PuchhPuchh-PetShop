@@ -3,9 +3,16 @@ import LOGO from "../homePage/mainlogo.png";
 // import "../../index.css";
 import Dropdown from "../Dropdown/dropdown";
 import "./navbar.css";
+import Search from "../../Search/search";
+import product_category, { filter } from "../Dropdown/filtering_options";
+import account from "../Dropdown/account_option";
+import SearchIcon from '@material-ui/icons/Search';
+import FilterListIcon from '@material-ui/icons/FilterList';
+
+
 
 const testDropdown = {
-  title: "Test",
+  title: "Appointment",
   options: [
     {
       name: "First Option",
@@ -37,10 +44,20 @@ export default function Navbar() {
       <div className="nav-options">
         <a className="home">Home</a>
         <div className="dropdown-home">
-          <Dropdown menu={testDropdown} color='aliceblue'/>
+          <Dropdown menu={product_category} color='aliceblue'/>
         </div>
         <div className="dropdown-home">
           <Dropdown menu={testDropdown} color='aliceblue'/>
+        </div>
+        <div className="search-home">
+          <Search title="Search..." color="aliceblue" font="bold" background="aliceblue" margin="-30px" width = "250px"/>
+        </div>
+        <div className="dropdown-home_2">
+          <FilterListIcon style={{color: "aliceblue" , marginTop:"5px"}} />
+          <Dropdown menu={filter} color='aliceblue'/>
+        </div>
+        <div className="dropdown-home_2">
+          <Dropdown menu={account} color='aliceblue'/>
         </div>
       </div>
     </nav>

@@ -1,0 +1,13 @@
+.header-container{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    background-color: green;
+    justify-content: space-evenly;
+}
+.social-media{
+    display: flex;
+    justify-content: space-between;
+}

@@ -12,7 +12,7 @@
 .nav-options{
     margin-left: 8.5rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .nav-options > * {
@@ -34,8 +34,21 @@
 
 .dropdown-home{
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     margin-left: 20px;
+    /* color: aliceblue; */
+    font-size: 1.2rem;
+    word-wrap: none;
+}
+.search-home {
+    display: flex;
+    margin-left: 150px; 
+}
+
+.dropdown-home_2{
+    display: flex;
+    flex-direction: row-reverse; 
+    margin-left:180px;
     /* color: aliceblue; */
     font-size: 1.2rem;
 }
