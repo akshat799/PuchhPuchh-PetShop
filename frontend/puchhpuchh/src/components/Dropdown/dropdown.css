@@ -65,4 +65,7 @@
     color: darkgreen;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.2);
-}   
+}  
+.account-wrap{
+    display: flex;
+}
