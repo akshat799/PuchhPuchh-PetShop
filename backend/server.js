@@ -22,11 +22,13 @@ const appointmentsRouter = require('./routes/appointments');
 const catalogsRouter = require('./routes/catalogs');
 const groomingsRouter = require('./routes/groomings');
 const inventoriesRouter = require('./routes/inventories');
+const usersRouter = require('./routes/users');
 
 app.use('/appointments', appointmentsRouter);
 app.use('/catalogs', catalogsRouter);
 app.use('/groomings', groomingsRouter);
 app.use('/inventories', inventoriesRouter);
+app.use('/users', usersRouter);
 
 app.listen(port , () => {
     console.log(`Server is running on port: ${port}`);
