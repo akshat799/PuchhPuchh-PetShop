@@ -1,18 +1,15 @@
-import { AUTH , LOGOUT } from '../constants/constantTypes';
+import { AUTH, LOGOUT } from "../constants/constantTypes";
 
-const authReducers = ( state= {authData : null }, action ) => {
-   switch (action.type) {
-       case AUTH:
-           localStorage.setItem ('profile' , JSON.stringify({...action?.data}))
-           return {...state, authData : action?.data};
-        case LOGOUT:
-            localStorage.clear();
-       
-            return {...state , authData: null};
-            
-       default:
-           return state;
-   }
+const authReducers = (state = { authData: null }, action) => {
+  switch (action.type) {
+    case AUTH:
+      return { ...state, authData: action?.data };
+    case LOGOUT:
+      return { ...state, authData: null };
+
+    default:
+      return state;
+  }
 };
 
 export default authReducers;
