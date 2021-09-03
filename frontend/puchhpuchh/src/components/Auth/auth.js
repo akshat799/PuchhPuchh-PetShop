@@ -24,10 +24,15 @@ export default function Auth() {
     }
     
     const goBack = () => {
-        if(requests.result.email === 'puchhpuchhns@gmail.com') {
-            history.push('/admin');
+
+        if(requests){
+            if(requests.result.email === 'puchhpuchhns@gmail.com') {
+                history.push('/admin');
+            }else{
+                history.goBack();
+            }
         }else{
-            history.goBack();
+            history.push('/');
         }
     };
 
