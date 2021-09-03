@@ -2,29 +2,37 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-const inventorySchema = new Schema ({
+const saleSchema = new Schema ({
     UserId : {
         type: String,
+        required: true
+    },
+    date : {
+        type: Date,
         required:true,
     }, 
     brandname : {
         type: String,
         required: true,
-        lowercase: true,
-        keywords: [{
-            type: String
-        }]
+        lowercase: true
     },
     productname : {
         type: String,
         required: true,
         lowercase: true
     },
-    size : {weight_lbs : String, weight_kg : String },
+    weight: {
+        type: String,
+    
+    },
+    animal: {
+        type: String
+    },
     amount : Number,
-    price : Number
+    discount: Number,
+    total : Number
 });
 
-const Inventory = mongoose.model('Inventory' , inventorySchema);
+const Sale = mongoose.model('Sale' , saleSchema);
 
-module.exports = Inventory;
+module.exports = Sale;

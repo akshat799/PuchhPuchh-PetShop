@@ -15,17 +15,18 @@ const appointmentSchema = new Schema({
         type: String,
         required: true
     },
-    account : [
-        {
+    phone : {
+        type: String,
+        required: true
+    },
+    account :{
             email: {
                 type: String,
-                required: true
             },
             account_id: {
                 type: String,
-                required: true
             }
-        }],
+        },
     date : {
         type: Date,
         required: true

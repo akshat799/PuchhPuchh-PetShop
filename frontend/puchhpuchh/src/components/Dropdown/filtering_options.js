@@ -7,7 +7,7 @@ const product_category =  {
         {
             name: "Food",
             onPress: () => {
-                console.log("food was pressed");
+                
             },
         },
         {

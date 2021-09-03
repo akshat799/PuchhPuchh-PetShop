@@ -14,6 +14,9 @@ const groomingSchema = new Schema ({
     price: {
         type: Number,
         required: true
+    },
+    size: {
+        type: String
     }
 });
 

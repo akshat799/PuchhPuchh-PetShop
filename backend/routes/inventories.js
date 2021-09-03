@@ -8,16 +8,20 @@ router.route('/').get((req,res) => {
 });
 
 router.route('/add').post((req,res) => {
+    const UserId = req.body.UserId;
     const brandname = req.body.brandname;
     const productname = req.body.productname;
     const size = req.body.size;
     const amount = Number(req.body.amount);
+    const price = Number(req.body.price);
 
     const newInventory = new Inventory ({
+        UserId,
         brandname,
         productname,
         size,
         amount,
+        price
     });
 
     newInventory.save()
@@ -44,6 +48,7 @@ router.route('/update/:id').post((req,res) => {
         inventory.productname = req.body.productname;
         inventory.size = req.body.size;
         inventory.amount = Number(req.body.amount);
+        inventory.price = Number(req.body.price);
 
         inventory.save()
         .then(() => res.json('Inventory updated!'))
