@@ -11,9 +11,7 @@ import FilterListIcon from '@material-ui/icons/FilterList';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@material-ui/core';
 import Dropdown_account from "../Dropdown/account_option";
-
-
-
+import AppointmentDropdown from "../Dropdown/appointment_dropdown";
 
 const testDropdown = {
   title: "Appointment",
@@ -65,7 +63,7 @@ export default function Navbar() {
           <Dropdown menu={product_category} color='aliceblue'/>
         </div>
         <div className="dropdown-home">
-          <Dropdown menu={testDropdown} color='aliceblue'/>
+          <AppointmentDropdown />
         </div>
         <div className="search-home">
           <Search title="Search..." color="aliceblue" font="bold" background="aliceblue" margin="-30px" width = "250px"/>

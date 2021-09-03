@@ -1,19 +1,23 @@
 import Navbar from "./components/Navbar/Navbar";
 import Dropdown from "./components/Dropdown/dropdown";
 import Footer from "./components/Footer/Footer";
-import {BrowserRouter as Router , Switch , Route} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Auth from "./components/Auth/auth";
+import NewAppointment from "./appointments/newAppointment/newAppointment";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Switch >
-          <Route exact path= "/" >
+        <Switch>
+          <Route exact path="/auth" component={Auth} />
+          <Route path="/">
             <Navbar />
-            <Footer />  
+            <Switch>
+              <Route path="/newAppointment" component={NewAppointment} />
+            </Switch>
+            <Footer />
           </Route>
-          <Route path="/auth" component={Auth} />
         </Switch>
       </div>
     </Router>
