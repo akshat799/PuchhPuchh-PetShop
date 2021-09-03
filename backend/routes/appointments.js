@@ -11,6 +11,7 @@ router.route('/add').post((req,res) => {
     const name = req.body.name;
     const animal = req.body.animal;
     const service = req.body.service;
+    const phone = req.body.phone;
     const account = req.body.account;
     const date = Date.parse(req.body.date);
     const time = req.body.time
@@ -19,6 +20,7 @@ router.route('/add').post((req,res) => {
         name,
         animal,
         service,
+        phone,
         account,
         date,
         time,
@@ -47,6 +49,7 @@ router.route('/update/:id').post((req,res) => {
         appointment.name = req.body.name;
         appointment.animal = req.body.animal;
         appointment.service = req.body.service;
+        appointment.phone = req.body.phone;
         appointment.account = req.body.account;
         appointment.date = Date.parse(req.body.date);
         appointment.time = req.body.time

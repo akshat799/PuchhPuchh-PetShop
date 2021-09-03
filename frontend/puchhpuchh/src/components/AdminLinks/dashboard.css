@@ -1,0 +1,14 @@
+/* .monthPaper {
+  background-color: 
+} */
+
+.dashboard {
+  overflow: hidden;
+}
+
+.monthSale {
+  background: -webkit-linear-gradient(#eee, #43a047);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+}

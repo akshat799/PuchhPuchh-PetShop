@@ -8,16 +8,22 @@ router.route('/').get((req,res) => {
 });
 
 router.route('/add').post((req,res) => {
-    const brandname = res.body.brandname;
-    const productname = res.body.productname;
-    const category = res.body.category;
-    const animal = res.body.animal;
+    const UserId = req.body.UserId;
+    const brandname = req.body.brandname;
+    const productname = req.body.productname;
+    const category = req.body.category;
+    const animal = req.body.animal;
+    const path = req.body.path;
+    const price = Number(req.body.price);
 
     const newCatalog = new Catalog ({
+        UserId,
         brandname,
         productname,
         category,
         animal,
+        path,
+        price
     });
 
     newCatalog.save()
@@ -27,9 +33,13 @@ router.route('/add').post((req,res) => {
 
 router.route('/:id').get((req,res) => {
     Catalog.findById(req.params.id)
+    
     .then(catalog => res.json(catalog))
     .catch(err => res.status(400).json('Error:' + err));
+    
 });
+
+
 
 router.route('/:id').delete((req,res) => {
     Catalog.findByIdAndDelete(req.params.id)
@@ -44,6 +54,8 @@ router.route('/update/:id').post((req,res) => {
         catalog.productname = req.body.productname;
         catalog.category = req.body.category;
         catalog.animal = req.body.animal;
+        catalog.path = req.body.path;
+        catalog.price = Number(req.body.price);
 
         catalog.save()
         .then(() => res.json('Catelog updated!'))

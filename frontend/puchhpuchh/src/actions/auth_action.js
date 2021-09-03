@@ -18,8 +18,11 @@ export const signin = ( formData , history) => async (dispatch) => {
         const { data } = await api.signIn(formData);
 
         dispatch({ type: AUTH , data });
-
-        history.goBack();
+        if(data.result.email === "puchhpuchhns@gmail.com"){
+            history.push('/admin')
+        }else{
+            history.goBack();
+        }
     } catch (error) {
         console.log(error);
     }

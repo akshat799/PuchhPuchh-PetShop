@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
-
+const { auth , authRole } = require('./middleware/auth_middleware')
 require ('dotenv').config();
 
 const app = express();
@@ -23,12 +23,14 @@ const catalogsRouter = require('./routes/catalogs');
 const groomingsRouter = require('./routes/groomings');
 const inventoriesRouter = require('./routes/inventories');
 const usersRouter = require('./routes/users');
+const salesRouter = require('./routes/sales');
 
 app.use('/appointments', appointmentsRouter);
 app.use('/catalogs', catalogsRouter);
 app.use('/groomings', groomingsRouter);
 app.use('/inventories', inventoriesRouter);
 app.use('/users', usersRouter);
+app.use('/sales', salesRouter);
 
 app.listen(port , () => {
     console.log(`Server is running on port: ${port}`);

@@ -10,10 +10,25 @@ import { useDispatch} from 'react-redux';
 import Input from './Input';
 import { signup , signin} from '../../actions/auth_action';
 export default function Auth() {
+
+    let requests = JSON.parse(localStorage.getItem('profile'));
     let history = useHistory();
     let dispatch = useDispatch();
+
+    if(requests){
+        if(requests.result.email === 'puchhpuchhns@gmail.com') {
+            history.push('/admin');
+        }else{
+            history.push('/');
+        }
+    }
+    
     const goBack = () => {
-        history.goBack();
+        if(requests.result.email === 'puchhpuchhns@gmail.com') {
+            history.push('/admin');
+        }else{
+            history.goBack();
+        }
     };
 
     const initialState = {firstName: '', lastName: '' , email: '', password: '', confirmPassword: ''};
