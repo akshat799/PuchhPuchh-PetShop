@@ -20,5 +20,21 @@ This WebSite is made by using the MERN Stack.
   ### Package Installation for Frontend
   Run the following command: <br/>
   `npm install` <br/>
-  ### Run the client w
+  ### Run the React APP in the development mode using the command: <br/>
+  `npm start`<br/>
+ ## Backend Setup:
+  -Go to the directory `backend/`
+  ### Package Installation for Backend
+  Run the following command: <br/>
+  `npm install` <br/>
+  ### Run the Server in development mode using the command : <br/>
+  `nodemon server.js`<br/>
+  
+# MongoDB
+This application is using a document database or NoSQL database MongoDB. <br/>
+The Pet Store is a small bussiness using simple queries and as a developer I wanted to learn how to use MERN Stack , so I went for MongoDB instead of any relational database.
+
+The Database is on my personal MongoDB ATLAS so the database is centralized and no need to setup the database. 
+
+**NOTE: Any changes made from the website to the existing data will be added to the database and effect everyone using the application.**
  
