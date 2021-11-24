@@ -1,7 +1,0 @@
--g create-react-app
-express
-nodemon
-jquery
-cors
-dotenv
-mongoose
