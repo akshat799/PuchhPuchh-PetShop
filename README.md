@@ -15,6 +15,10 @@ This WebSite is made by using the MERN Stack.
     - It is the client side which is using React as the framework.
  2. Backend
     - It is the server-database side which is using Nodejs for server creation , Expressjs for API creation , MongoDB (mongoose) as the database.
- ### Frontend setup:
-  - Go to the directory frontend/puchhpuchh
+ ## Frontend setup:
+  - Go to the directory `frontend/puchhpuchh`.
+  ### Package Installation for Frontend
+  Run the following command: <br/>
+  `npm install` <br/>
+  ### Run the client w
  
