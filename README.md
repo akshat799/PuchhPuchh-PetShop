@@ -1,4 +1,4 @@
-# PuchhPuchh-PetShop
+# PuchhPuchh-PetShop (Under Progress)
 It is an **Ecommerce Website for a Pet Store in Halifax , Nova Scotia**. <br/>
 It has a **Customer side interface** where you can browse various products we have for different animals. A customer can book appointments for grooming as well.<br/>
 It has a **Pet Store Employee Interface** where the store employees can do the following :- 
